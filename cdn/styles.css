@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+#splash, #app {
+    display: none;
+}
+
+#splash.active, #app.active {
+    display: block;
+}
+
+#calls_table {
+    border-collapse: collapse;
+}
+
+#calls_table > thead {
+    background: #eee;
+}
+
+#calls_table > thead > tr > th {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#calls_table > tbody > tr > td,
+#calls_table > thead > tr > th {
+    width: 100px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#calls_table > tbody > tr.active {
+    background: #DDF1FC;
+}
+
+#make_call_input {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border: solid 1px #eee;
+    padding: 5px 10px;
+    margin-right: 15px;
+}
+
+#make_call_button {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: #eee;
+    font-size: 13px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#call_controls > span {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: #eee;
+    font-size: 13px;
+    padding: 5px 10px;
+    opacity: 0.5;
+}
+
+#call_controls > span.active {
+    opacity: 1;
+    cursor: pointer;
+}

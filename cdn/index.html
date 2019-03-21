@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>UCSDK Test Harness</title>
+        <!-- all js included at the bottom -->
+    </head>
+    <body>
+        <div id="splash" class="active">
+            <p>logging in...</p>
+        </div>
+        <div id="app">
+            <input id="make_call_input" type="text" placeholder="number" /><span id="make_call_button">make call</span>
+            <br />
+            <br />
+            <br />
+            <table id="calls_table">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>caller</th>
+                        <th>called</th>
+                        <th>state</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <br />
+            <br />
+            <br />
+            <div id="call_controls">
+                <span id="answer_call" class="call_control_button">answer</span>
+                <span id="hang_up_call" class="call_control_button">hang up</span>
+                <span id="hold_call" class="call_control_button">hold</span>
+                <span id="unhold_call" class="call_control_button">unhold</span>
+            </div>
+        </div>
+        <!-- ucsdk.js must be included to give us access to the library - no need to read -->
+        <script src="./ucsdk.js"></script>
+        
+        <!-- ignore - only here to manipulate the DOM and give us the test harness -->
+        <script src="./login_helper.js"></script>
+        <script src="./calls_helper.js"></script>
+        <script src="./init.js"></script>
+        <!-- /ignore -->
+        
+        <!-- main.js file includes the usage of the library -->
+        <script src="./main.js"></script>
+    </body>
+</html>
