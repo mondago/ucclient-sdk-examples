@@ -1,0 +1,14 @@
+#CallControls > span {
+    border-radius: 50px;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    background: #eee;
+    font-size: 13px;
+    padding: 5px 10px;
+    opacity: 0.5;
+}
+
+#CallControls > span.ActiveButton {
+    opacity: 1;
+    cursor: pointer;
+}

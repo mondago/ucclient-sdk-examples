@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+    font-family: "Quicksand", sans-serif;
+}

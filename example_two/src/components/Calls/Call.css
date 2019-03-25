@@ -1,0 +1,28 @@
+#CallsTable {
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+#CallsTable > thead {
+    background: #eee;
+}
+
+#CallsTable > thead > tr > th {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+#CallsTable > tbody > tr > td,
+#CallsTable > thead > tr > th {
+    width: 100px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px;
+    font-size: 13px;
+}
+
+#CallsTable > tbody > tr.Active {
+    background: #ddf1fc;
+}
