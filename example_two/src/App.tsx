@@ -1,5 +1,5 @@
 import * as React from "react"
-import UCSession, { LoginObject, UserObject, CallObject } from "ucsdk-api"
+import UCSession, { LoginObject, UserObject, CallObject } from "ucclient-sdk"
 import Calls from "./components/Calls"
 import CallControl from "./components/CallControl"
 
@@ -53,7 +53,7 @@ export default class App extends React.Component<AppProps, AppState> {
         return null
     }
 
-    updateActiveCall(id?: string): void {
+    updateActiveCall = (id?: string): void => {
         if (!id) this._activeCallRemoved()
         this.setState({ activeCall: this.state.calls[id] })
     }
@@ -78,7 +78,12 @@ export default class App extends React.Component<AppProps, AppState> {
         return (
             <div>
                 <CallControl makeCallValue={this.state.makeCallValue} valueUpdate={this.updateMakeCallValue} makeCall={this.makeCall} />
-                <Calls activeCallId={this.activeCallId} calls={this.state.calls} callController={this._ucInterface.callController} />
+                <Calls
+                    activeCallId={this.activeCallId}
+                    calls={this.state.calls}
+                    callController={this._ucInterface.callController}
+                    updateActiveCall={this.updateActiveCall}
+                />
                 <CallButtons activeCall={this.state.activeCall} callController={this._ucInterface.callController} />
             </div>
         )
