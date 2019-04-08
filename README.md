@@ -12,6 +12,6 @@ Shows how to use the sdk provided as a released [zip](https://github.com/mondago
 
 Any files not mentioned just contain methods to manipulate the dom
 
-### example two
+## React TypeScript Application
 
-Shows an example of a react application using the npm package ucsdk-api
+Shows an example of a react application using the npm package ucclient-sdk
