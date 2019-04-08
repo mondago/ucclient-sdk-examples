@@ -1,5 +1,5 @@
 import * as React from "react"
-import { CallObject } from "ucsdk-api"
+import { CallObject } from "ucclient-sdk"
 
 import "./Call.css"
 
