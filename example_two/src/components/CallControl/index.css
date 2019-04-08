@@ -1,7 +1,12 @@
+#CallControl > input, #CallControl > span {
+    border-radius: 2px;
+    border: solid 1px #aaa;
+    padding: 4px 10px;
+}
+
 #CallControl > span {
-    padding: 2px 5px;
     font-size: 12px;
     margin-left: 5px;
-    background: #eee;
-    border: solid 1px #444;
+    font-weight: 600;
+    cursor: pointer;
 }
