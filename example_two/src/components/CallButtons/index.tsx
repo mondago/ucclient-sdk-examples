@@ -1,12 +1,12 @@
 import * as React from "react"
-import CallController, { CallObject } from "ucsdk-api"
+import UCSession, { CallObject } from "ucclient-sdk"
 
 import "./index.css"
 
 type CallAction = "hangup" | "hold" | "answer" | "unhold"
 interface CallButtonsProps {
     activeCall: CallObject
-    callController: CallController
+    callController: UCSession["callController"]
 }
 
 export default class CallButtons extends React.Component<CallButtonsProps> {
@@ -41,7 +41,7 @@ export default class CallButtons extends React.Component<CallButtonsProps> {
     private _answer = (): void => this.props.callController.answerCall(this.props.activeCall.Id)
     private _hangup = (): void => this.props.callController.hangupCall(this.props.activeCall.Id)
     private _hold = (): void => this.props.callController.holdCall(this.props.activeCall.Id)
-    private _unhold = (): void => this.props.callController.hangupCall(this.props.activeCall.Id)
+    private _unhold = (): void => this.props.callController.unHoldCall(this.props.activeCall.Id)
 
     render(): React.ReactNode {
         return (
