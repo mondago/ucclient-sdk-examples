@@ -1,6 +1,6 @@
 # Example Projects
 
-## CDN Example
+## CDN Example (example_one)
 
 Shows how to use the sdk provided as a released [zip](https://github.com/mondago/ucclient-js-sdk/releases/) or cdn
 
@@ -12,6 +12,6 @@ Shows how to use the sdk provided as a released [zip](https://github.com/mondago
 
 Any files not mentioned just contain methods to manipulate the dom
 
-## React TypeScript Application
+## React TypeScript Application (example_two)
 
 Shows an example of a react application using the npm package ucclient-sdk
