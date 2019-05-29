@@ -14,7 +14,7 @@ initDOM()
 /**
  * handle login event, likey to be more complex in complete application
  */
-const handleLoginEvent = e => showAppScreen()
+const handleLoginEvent = e => loggedIn()
 
 /**
  * handle call event
@@ -32,6 +32,7 @@ const handleCallEvent = e => {
  */
 window.addEventListener("ucLogin", handleLoginEvent)
 window.addEventListener("ucCall", handleCallEvent)
+window.addEventListener("ucUser", event => console.log(event.detail))
 
 /**
  * connect to our websocket via this method
