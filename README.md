@@ -28,6 +28,6 @@ All dependencies must be installed before starting application, this will instal
 npm start
 ```
 
-Application will be started on localhost and opened on your default browser.
+Application will be started on localhost:8080 you can visit this in your browser.
 
 [1]: https://github.com/mondago/ucclient-js-sdk
