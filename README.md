@@ -16,5 +16,18 @@ Any files not mentioned just contain methods to manipulate the dom.
 
 Shows an example of a react application using the npm package ucclient-sdk
 
-**Make sure to run npm install before using.**
+### Starting application
 
+```
+npm install
+```
+
+All dependencies must be installed before starting application, this will install the [UCClient-SDK][1].
+
+```
+npm start
+```
+
+Application will be started on localhost and opened on your default browser.
+
+[1]: https://github.com/mondago/ucclient-js-sdk
