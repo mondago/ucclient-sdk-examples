@@ -4,7 +4,7 @@
 
 Shows how to use the SDK provided as a released zip or cdn.
 
-1. Download the SDK from [here](2).
+1. Download the SDK from [here][2].
 2. Drop the ucsdk.js file into "./example_one".
 3. Open "./example_one/index.html" in the browser.
 
